@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siddiqua Abedeen | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">Siddiqua Abedeen</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <!--  Section -->
+<section class="Siddiqua" id="carousel">
+  <div class="Siddiqua-content">
+    <div class="Siddiqua-text">
+      <h1>Hello, I'm Siddiqua Abedeen</h1>
+      <p>
+        B.Tech Information Technology student with interest in
+        web development, programming, and software projects.
+      </p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+
+    <div class="Siddiqua-image">
+      <img src="profile2.png" alt="Siddiqua Abedeen">
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a 4th-semester IT student at IGDTUW with a strong interest in web development and software engineering. I enjoy creating projects that combine creativity and functionality, exploring programming languages, and building solutions that make a difference. I' m continuously learning new technologies and aiming to grow as a skilled developer who contributes to innovative projects.</p>
+  </section>
+
+  <section id="projects" class="projects">
+  <h2>My Projects</h2>
+
+  <button class="btn toggle-btn" onclick="toggleProjects()">View Projects</button>
+
+  <div id="projectList" class="project-grid hidden">
+
+    <div class="project-card">
+      <h3>Calculator</h3>
+      <a href="https://github.com/Siddiqua2007/CodeAlpha_Calculator.git" target="_blank">Calculator</a>
+      <p>Interactive calculator built using HTML, CSS, and JavaScript with animations and sound effects.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <a href="https://github.com/Siddiqua2007/CodeAlpha_Portfolio.git" target="_blank">Portfolio Website</a>
+      <p>Responsive personal portfolio showcasing skills, projects, and contact information.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Global Women Empowerment Data Dashboard</h3>
+      <a href="https://github.com/Siddiqua2007/Global-Women-Empowerment-Data-Dashboard.git" target="_blank">Global Women Empowerment Data Dashboard</a>
+      <p>Data dashboard visualizing global women empowerment metrics using charts and insights.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="resume">
+  <h2>Resume</h2>
+
+  <button class="btn toggle-btn" onclick="toggleResume()">Download Resume</button>
+
+  <div id="resumeInfo" class="hidden">
+    <a href="Sidd_Resume.pdf" download>Download PDF</a>
+    <p>B.Tech IT student with strong foundation in programming, DSA, DBMS, and web development.</p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="skills">
+  <h2>My Skills</h2>
+
+  <!-- Technical Skills -->
+  <div class="skill-category">
+    <h3>Technical Skills</h3>
+    <div class="skill-grid">
+      <div class="skill-card" data-level="90%">HTML</div>
+      <div class="skill-card" data-level="85%">CSS</div>
+      <div class="skill-card" data-level="80%">JavaScript</div>
+      <div class="skill-card" data-level="75%">Git & GitHub</div>
+      <div class="skill-card" data-level="70%">Terminal</div>
+      <div class="skill-card" data-level="70%">Bootstrap</div>
+      <div class="skill-card" data-level="75%">SQL</div>
+      <div class="skill-card" data-level="80%">Python + Libraries</div>
+      <div class="skill-card" data-level="70%">C</div>
+      <div class="skill-card" data-level="70%">C++</div>
+      <div class="skill-card" data-level="85%">MS Word</div>
+      <div class="skill-card" data-level="80%">MS Excel</div>
+      <div class="skill-card" data-level="85%">PowerPoint</div>
+    </div>
+  </div>
+
+  <!-- Academic Skills -->
+  <div class="skill-category">
+    <h3>Academic Skills</h3>
+    <div class="skill-grid">
+      <div class="skill-card" data-level="60%">DSA</div>
+      <div class="skill-card" data-level="80%">DBMS</div>
+      <div class="skill-card" data-level="70%">Operating Systems</div>
+    </div>
+  </div>
+
+  <!-- Soft Skills -->
+  <div class="skill-category">
+    <h3>Soft Skills</h3>
+    <div class="skill-grid">
+      <div class="skill-card" data-level="85%">Problem Solving</div>
+      <div class="skill-card" data-level="80%">Analytical Thinking</div>
+      <div class="skill-card" data-level="75%">Research Driven</div>
+      <div class="skill-card" data-level="90%">Time Management</div>
+    </div>
+  </div>
+</section>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+ <!-- From Uiverse.io by ammarsaa --> 
+<form class="form">
+    <p class="title">Contact Me </p>
+    <p class="message">Signup now and get full access to our app. </p>
+      
+        <label>
+            <input class="input" type="text" placeholder="Name" required="">
+           
+        </label>
+
+       
+    
+            
+    <label>
+        <input class="input" type="email" placeholder="Email" required="">
+       
+    </label> 
+    
+    <textarea class="input" name="" id="" placeholder="Write A message"></textarea>
+        
+ 
+    <button class="submit">Submit</button>
+
+</form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Siddiqua Abedeen. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
